@@ -1,0 +1,254 @@
+No.     Time           Source                Destination           Protocol Length Info
+    219 9.304636       10.232.74.157         49.232.222.57         TCP      66     50053 → 1234 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM=1
+
+Frame 219: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 50053, Dst Port: 1234, Seq: 0, Len: 0
+    Source Port: 50053
+    Destination Port: 1234
+    [Stream index: 27]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 0
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x002 (SYN)
+    Window size value: 64240
+    [Calculated window size: 64240]
+    Checksum: 0x65cd [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    220 9.311737       49.232.222.57         10.232.74.157         TCP      66     1234 → 50053 [SYN, ACK] Seq=0 Ack=1 Win=29200 Len=0 MSS=1424 SACK_PERM=1 WS=512
+
+Frame 220: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 50053, Seq: 0, Ack: 1, Len: 0
+    Source Port: 1234
+    Destination Port: 50053
+    [Stream index: 27]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x012 (SYN, ACK)
+    Window size value: 29200
+    [Calculated window size: 29200]
+    Checksum: 0x1d49 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), No-Operation (NOP), SACK permitted, No-Operation (NOP), Window scale
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    221 9.311848       10.232.74.157         49.232.222.57         TCP      54     50053 → 1234 [ACK] Seq=1 Ack=1 Win=132352 Len=0
+
+Frame 221: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 50053, Dst Port: 1234, Seq: 1, Ack: 1, Len: 0
+    Source Port: 50053
+    Destination Port: 1234
+    [Stream index: 27]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x65c1 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    331 19.916294      10.232.74.157         49.232.222.57         TCP      60     50053 → 1234 [PSH, ACK] Seq=1 Ack=1 Win=132352 Len=6
+
+Frame 331: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 50053, Dst Port: 1234, Seq: 1, Ack: 1, Len: 6
+    Source Port: 50053
+    Destination Port: 1234
+    [Stream index: 27]
+    [TCP Segment Len: 6]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 7    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x65c7 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (6 bytes)
+Data (6 bytes)
+
+0000  61 61 61 61 61 0a                                 aaaaa.
+
+No.     Time           Source                Destination           Protocol Length Info
+    332 19.922990      49.232.222.57         10.232.74.157         TCP      60     1234 → 50053 [ACK] Seq=1 Ack=7 Win=29696 Len=0
+
+Frame 332: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 50053, Seq: 1, Ack: 7, Len: 0
+    Source Port: 1234
+    Destination Port: 50053
+    [Stream index: 27]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 7    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 58
+    [Calculated window size: 29696]
+    [Window size scaling factor: 512]
+    Checksum: 0xcfc9 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    333 19.923217      49.232.222.57         10.232.74.157         TCP      61     1234 → 50053 [PSH, ACK] Seq=1 Ack=7 Win=29696 Len=7
+
+Frame 333: 61 bytes on wire (488 bits), 61 bytes captured (488 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 50053, Seq: 1, Ack: 7, Len: 7
+    Source Port: 1234
+    Destination Port: 50053
+    [Stream index: 27]
+    [TCP Segment Len: 7]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 8    (relative sequence number)]
+    Acknowledgment number: 7    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 58
+    [Calculated window size: 29696]
+    [Window size scaling factor: 512]
+    Checksum: 0x206e [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+    TCP payload (7 bytes)
+Data (7 bytes)
+
+0000  73 75 63 63 65 73 73                              success
+
+No.     Time           Source                Destination           Protocol Length Info
+    334 19.923531      49.232.222.57         10.232.74.157         TCP      60     1234 → 50053 [FIN, ACK] Seq=8 Ack=7 Win=29696 Len=0
+
+Frame 334: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 50053, Seq: 8, Ack: 7, Len: 0
+    Source Port: 1234
+    Destination Port: 50053
+    [Stream index: 27]
+    [TCP Segment Len: 0]
+    Sequence number: 8    (relative sequence number)
+    [Next sequence number: 8    (relative sequence number)]
+    Acknowledgment number: 7    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x011 (FIN, ACK)
+    Window size value: 58
+    [Calculated window size: 29696]
+    [Window size scaling factor: 512]
+    Checksum: 0xcfc1 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    335 19.923556      10.232.74.157         49.232.222.57         TCP      54     50053 → 1234 [ACK] Seq=7 Ack=9 Win=132352 Len=0
+
+Frame 335: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 50053, Dst Port: 1234, Seq: 7, Ack: 9, Len: 0
+    Source Port: 50053
+    Destination Port: 1234
+    [Stream index: 27]
+    [TCP Segment Len: 0]
+    Sequence number: 7    (relative sequence number)
+    [Next sequence number: 7    (relative sequence number)]
+    Acknowledgment number: 9    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x65c1 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    336 19.923592      10.232.74.157         49.232.222.57         TCP      54     50053 → 1234 [FIN, ACK] Seq=7 Ack=9 Win=132352 Len=0
+
+Frame 336: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 50053, Dst Port: 1234, Seq: 7, Ack: 9, Len: 0
+    Source Port: 50053
+    Destination Port: 1234
+    [Stream index: 27]
+    [TCP Segment Len: 0]
+    Sequence number: 7    (relative sequence number)
+    [Next sequence number: 7    (relative sequence number)]
+    Acknowledgment number: 9    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x011 (FIN, ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x65c1 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    337 19.930934      49.232.222.57         10.232.74.157         TCP      60     1234 → 50053 [ACK] Seq=9 Ack=8 Win=29696 Len=0
+
+Frame 337: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 50053, Seq: 9, Ack: 8, Len: 0
+    Source Port: 1234
+    Destination Port: 50053
+    [Stream index: 27]
+    [TCP Segment Len: 0]
+    Sequence number: 9    (relative sequence number)
+    [Next sequence number: 9    (relative sequence number)]
+    Acknowledgment number: 8    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 58
+    [Calculated window size: 29696]
+    [Window size scaling factor: 512]
+    Checksum: 0xcfc0 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+    [Timestamps]

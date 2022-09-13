@@ -1,0 +1,674 @@
+No.     Time           Source                Destination           Protocol Length Info
+     58 7.852318       10.232.74.157         49.232.222.57         TCP      66     51555 → 1234 [SYN] Seq=0 Win=64240 Len=0 MSS=1460 WS=256 SACK_PERM=1
+
+Frame 58: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 51555, Dst Port: 1234, Seq: 0, Len: 0
+    Source Port: 51555
+    Destination Port: 1234
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 0
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x002 (SYN)
+    Window size value: 64240
+    [Calculated window size: 64240]
+    Checksum: 0x65cd [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+        TCP Option - Maximum segment size: 1460 bytes
+            Kind: Maximum Segment Size (2)
+            Length: 4
+            MSS Value: 1460
+        TCP Option - No-Operation (NOP)
+        TCP Option - Window scale: 8 (multiply by 256)
+            Kind: Window Scale (3)
+            Length: 3
+            Shift count: 8
+            [Multiplier: 256]
+        TCP Option - No-Operation (NOP)
+        TCP Option - No-Operation (NOP)
+        TCP Option - SACK permitted
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 7.860736       49.232.222.57         10.232.74.157         TCP      66     1234 → 51555 [SYN, ACK] Seq=0 Ack=1 Win=29200 Len=0 MSS=1424 SACK_PERM=1 WS=512
+
+Frame 59: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 51555, Seq: 0, Ack: 1, Len: 0
+    Source Port: 1234
+    Destination Port: 51555
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    [Next sequence number: 0    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x012 (SYN, ACK)
+    Window size value: 29200
+    [Calculated window size: 29200]
+    Checksum: 0xde36 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), No-Operation (NOP), SACK permitted, No-Operation (NOP), Window scale
+        TCP Option - Maximum segment size: 1424 bytes
+            Kind: Maximum Segment Size (2)
+            Length: 4
+            MSS Value: 1424
+        TCP Option - No-Operation (NOP)
+        TCP Option - No-Operation (NOP)
+        TCP Option - SACK permitted
+        TCP Option - No-Operation (NOP)
+        TCP Option - Window scale: 9 (multiply by 512)
+            Kind: Window Scale (3)
+            Length: 3
+            Shift count: 9
+            [Multiplier: 512]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 58]
+        [The RTT to ACK the segment was: 0.008418000 seconds]
+        [iRTT: 0.008540000 seconds]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 7.860858       10.232.74.157         49.232.222.57         TCP      54     51555 → 1234 [ACK] Seq=1 Ack=1 Win=132352 Len=0
+
+Frame 60: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 51555, Dst Port: 1234, Seq: 1, Ack: 1, Len: 0
+    Source Port: 51555
+    Destination Port: 1234
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x65c1 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 59]
+        [The RTT to ACK the segment was: 0.000122000 seconds]
+        [iRTT: 0.008540000 seconds]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     95 12.621836      10.232.74.157         49.232.222.57         TCP      1478   51555 → 1234 [ACK] Seq=1 Ack=1 Win=132352 Len=1424
+
+Frame 95: 1478 bytes on wire (11824 bits), 1478 bytes captured (11824 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 51555, Dst Port: 1234, Seq: 1, Ack: 1, Len: 1424
+    Source Port: 51555
+    Destination Port: 1234
+    [Stream index: 12]
+    [TCP Segment Len: 1424]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1425    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x6b51 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [iRTT: 0.008540000 seconds]
+        [Bytes in flight: 1424]
+        [Bytes sent since last PSH flag: 1424]
+    [Timestamps]
+    TCP payload (1424 bytes)
+Data (1424 bytes)
+
+0000  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0010  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0020  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0030  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0040  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0050  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0060  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0070  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0080  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0090  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0100  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0110  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0120  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0130  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0140  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0150  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0160  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0170  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0180  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0190  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0200  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0210  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0220  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0230  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0240  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0250  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0260  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0270  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0280  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0290  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0300  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0310  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0320  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0330  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0340  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0350  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0360  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0370  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0380  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0390  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0400  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0410  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0420  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0430  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0440  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0450  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0460  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0470  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0480  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0490  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0500  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0510  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0520  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0530  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0540  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0550  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0560  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0570  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0580  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+
+No.     Time           Source                Destination           Protocol Length Info
+     96 12.621838      10.232.74.157         49.232.222.57         TCP      1478   51555 → 1234 [ACK] Seq=1425 Ack=1 Win=132352 Len=1424
+
+Frame 96: 1478 bytes on wire (11824 bits), 1478 bytes captured (11824 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 51555, Dst Port: 1234, Seq: 1425, Ack: 1, Len: 1424
+    Source Port: 51555
+    Destination Port: 1234
+    [Stream index: 12]
+    [TCP Segment Len: 1424]
+    Sequence number: 1425    (relative sequence number)
+    [Next sequence number: 2849    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x6b51 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [iRTT: 0.008540000 seconds]
+        [Bytes in flight: 2848]
+        [Bytes sent since last PSH flag: 2848]
+    [Timestamps]
+    TCP payload (1424 bytes)
+Data (1424 bytes)
+
+0000  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0010  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0020  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0030  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0040  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0050  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0060  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0070  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0080  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0090  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0100  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0110  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0120  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0130  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0140  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0150  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0160  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0170  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0180  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0190  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0200  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0210  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0220  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0230  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0240  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0250  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0260  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0270  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0280  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0290  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0300  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0310  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0320  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0330  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0340  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0350  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0360  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0370  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0380  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0390  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0400  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0410  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0420  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0430  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0440  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0450  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0460  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0470  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0480  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0490  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0500  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0510  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0520  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0530  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0540  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0550  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0560  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0570  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0580  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+
+No.     Time           Source                Destination           Protocol Length Info
+     97 12.621838      10.232.74.157         49.232.222.57         TCP      1301   51555 → 1234 [PSH, ACK] Seq=2849 Ack=1 Win=132352 Len=1247
+
+Frame 97: 1301 bytes on wire (10408 bits), 1301 bytes captured (10408 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 51555, Dst Port: 1234, Seq: 2849, Ack: 1, Len: 1247
+    Source Port: 51555
+    Destination Port: 1234
+    [Stream index: 12]
+    [TCP Segment Len: 1247]
+    Sequence number: 2849    (relative sequence number)
+    [Next sequence number: 4096    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x6aa0 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [iRTT: 0.008540000 seconds]
+        [Bytes in flight: 4095]
+        [Bytes sent since last PSH flag: 4095]
+    [Timestamps]
+    TCP payload (1247 bytes)
+Data (1247 bytes)
+
+0000  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0010  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0020  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0030  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0040  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0050  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0060  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0070  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0080  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0090  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+00f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0100  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0110  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0120  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0130  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0140  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0150  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0160  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0170  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0180  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0190  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+01f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0200  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0210  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0220  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0230  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0240  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0250  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0260  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0270  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0280  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0290  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+02f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0300  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0310  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0320  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0330  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0340  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0350  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0360  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0370  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0380  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0390  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03e0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+03f0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0400  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0410  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0420  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0430  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0440  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0450  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0460  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0470  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0480  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+0490  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04a0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04b0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04c0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 61 61   aaaaaaaaaaaaaaaa
+04d0  61 61 61 61 61 61 61 61 61 61 61 61 61 61 0a      aaaaaaaaaaaaaa.
+
+No.     Time           Source                Destination           Protocol Length Info
+     98 12.631522      49.232.222.57         10.232.74.157         TCP      60     1234 → 51555 [ACK] Seq=1 Ack=1425 Win=32256 Len=0
+
+Frame 98: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 51555, Seq: 1, Ack: 1425, Len: 0
+    Source Port: 1234
+    Destination Port: 51555
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 1425    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 63
+    [Calculated window size: 32256]
+    [Window size scaling factor: 512]
+    Checksum: 0x8b28 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 95]
+        [The RTT to ACK the segment was: 0.009686000 seconds]
+        [iRTT: 0.008540000 seconds]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     99 12.631743      49.232.222.57         10.232.74.157         TCP      60     1234 → 51555 [ACK] Seq=1 Ack=2849 Win=35328 Len=0
+
+Frame 99: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 51555, Seq: 1, Ack: 2849, Len: 0
+    Source Port: 1234
+    Destination Port: 51555
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 2849    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 69
+    [Calculated window size: 35328]
+    [Window size scaling factor: 512]
+    Checksum: 0x8592 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 96]
+        [The RTT to ACK the segment was: 0.009905000 seconds]
+        [iRTT: 0.008540000 seconds]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    100 12.631743      49.232.222.57         10.232.74.157         TCP      60     1234 → 51555 [ACK] Seq=1 Ack=4096 Win=37888 Len=0
+
+Frame 100: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 51555, Seq: 1, Ack: 4096, Len: 0
+    Source Port: 1234
+    Destination Port: 51555
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1    (relative sequence number)]
+    Acknowledgment number: 4096    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 74
+    [Calculated window size: 37888]
+    [Window size scaling factor: 512]
+    Checksum: 0x80ae [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 97]
+        [The RTT to ACK the segment was: 0.009905000 seconds]
+        [iRTT: 0.008540000 seconds]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    101 12.632063      49.232.222.57         10.232.74.157         TCP      61     1234 → 51555 [PSH, ACK] Seq=1 Ack=4096 Win=37888 Len=7
+
+Frame 101: 61 bytes on wire (488 bits), 61 bytes captured (488 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 51555, Seq: 1, Ack: 4096, Len: 7
+    Source Port: 1234
+    Destination Port: 51555
+    [Stream index: 12]
+    [TCP Segment Len: 7]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 8    (relative sequence number)]
+    Acknowledgment number: 4096    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 74
+    [Calculated window size: 37888]
+    [Window size scaling factor: 512]
+    Checksum: 0xd152 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [iRTT: 0.008540000 seconds]
+        [Bytes in flight: 7]
+        [Bytes sent since last PSH flag: 7]
+    [Timestamps]
+    TCP payload (7 bytes)
+Data (7 bytes)
+
+0000  73 75 63 63 65 73 73                              success
+
+No.     Time           Source                Destination           Protocol Length Info
+    102 12.632345      49.232.222.57         10.232.74.157         TCP      60     1234 → 51555 [FIN, ACK] Seq=8 Ack=4096 Win=37888 Len=0
+
+Frame 102: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 51555, Seq: 8, Ack: 4096, Len: 0
+    Source Port: 1234
+    Destination Port: 51555
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 8    (relative sequence number)
+    [Next sequence number: 8    (relative sequence number)]
+    Acknowledgment number: 4096    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x011 (FIN, ACK)
+    Window size value: 74
+    [Calculated window size: 37888]
+    [Window size scaling factor: 512]
+    Checksum: 0x80a6 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    103 12.632368      10.232.74.157         49.232.222.57         TCP      54     51555 → 1234 [ACK] Seq=4096 Ack=9 Win=132352 Len=0
+
+Frame 103: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 51555, Dst Port: 1234, Seq: 4096, Ack: 9, Len: 0
+    Source Port: 51555
+    Destination Port: 1234
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 4096    (relative sequence number)
+    [Next sequence number: 4096    (relative sequence number)]
+    Acknowledgment number: 9    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x65c1 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 102]
+        [The RTT to ACK the segment was: 0.000023000 seconds]
+        [iRTT: 0.008540000 seconds]
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    104 12.632403      10.232.74.157         49.232.222.57         TCP      54     51555 → 1234 [FIN, ACK] Seq=4096 Ack=9 Win=132352 Len=0
+
+Frame 104: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface 0
+Ethernet II, Src: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f), Dst: Hangzhou_e4:64:01 (60:0b:03:e4:64:01)
+Internet Protocol Version 4, Src: 10.232.74.157, Dst: 49.232.222.57
+Transmission Control Protocol, Src Port: 51555, Dst Port: 1234, Seq: 4096, Ack: 9, Len: 0
+    Source Port: 51555
+    Destination Port: 1234
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 4096    (relative sequence number)
+    [Next sequence number: 4096    (relative sequence number)]
+    Acknowledgment number: 9    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x011 (FIN, ACK)
+    Window size value: 517
+    [Calculated window size: 132352]
+    [Window size scaling factor: 256]
+    Checksum: 0x65c1 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+    105 12.639226      49.232.222.57         10.232.74.157         TCP      60     1234 → 51555 [ACK] Seq=9 Ack=4097 Win=37888 Len=0
+
+Frame 105: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface 0
+Ethernet II, Src: Hangzhou_e4:64:01 (60:0b:03:e4:64:01), Dst: 7c:b2:7d:83:6c:1f (7c:b2:7d:83:6c:1f)
+Internet Protocol Version 4, Src: 49.232.222.57, Dst: 10.232.74.157
+Transmission Control Protocol, Src Port: 1234, Dst Port: 51555, Seq: 9, Ack: 4097, Len: 0
+    Source Port: 1234
+    Destination Port: 51555
+    [Stream index: 12]
+    [TCP Segment Len: 0]
+    Sequence number: 9    (relative sequence number)
+    [Next sequence number: 9    (relative sequence number)]
+    Acknowledgment number: 4097    (relative ack number)
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+    Window size value: 74
+    [Calculated window size: 37888]
+    [Window size scaling factor: 512]
+    Checksum: 0x80a5 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 104]
+        [The RTT to ACK the segment was: 0.006823000 seconds]
+        [iRTT: 0.008540000 seconds]
+    [Timestamps]

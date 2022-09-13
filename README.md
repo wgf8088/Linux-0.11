@@ -1,6 +1,7 @@
 <!-- TOC -->
 
 - [Linux-0.11](#linux-011)
+  - [大概流程](#大概流程)
       - [gitignore git忽略文件](#gitignore-git忽略文件)
       - [忽略文件](#忽略文件)
   - [调试 Linux 最早期的代码](#调试-linux-最早期的代码)
@@ -25,6 +26,60 @@
 <!-- /TOC -->
 
 # Linux-0.11
+
+## 大概流程
+并没能跑起来
+[构建调试Linux内核网络代码的环境MenuOS系统](https://www.cnblogs.com/AmosYang6814/p/12027988.html)
+[gdb 调试 Linux 内核网络源码（附视频）](https://wenfh2020.com/2021/05/19/gdb-kernel-networking/)
+[vscode + gdb 远程调试 linux 内核源码（附视频）](https://wenfh2020.com/2021/06/23/vscode-gdb-debug-linux-kernel/)
+
+下载 ubuntu 14.04
+http://mirrors.aliyun.com/ubuntu-releases/14.04/ubuntu-14.04.6-desktop-amd64.iso
+
+
+Linux内核（Linux-5.0.1）
+get https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.0.1.tar.xz #下载linux-5.0.1的内核，当然也可以下载其他版本的，就是有点慢。
+wget https://kernel.org/pub/linux/kernel/v5.x/linux-5.0.1.tar.xz    #下载linux-5.0.1的内核
+git clone https://github.com/yuan-xy/Linux-0.11
+
+下载并加载QEMU虚拟机，并加载内核
+sudo apt install qemu # 安装qemu命令
+qemu-system-i386 -kernel linux-5.0.1/arch/x86/boot/bzImage #qemu虚拟机加载 linux-5.0.1内核，这条命令可以不用执行，因为后面构造menuOS的makefile中是包含了这条命令的
+
+构造MenuOs
+#下载menu系统，并在LinuxKernel目录下建一个子目录rootfs,当作menuOS的根目录
+git clone https://github.com/mengning/menu.git
+
+将TCP网络通信程序集成到MenuOS中
+git clone https://github.com/mengning/linuxnet.git
+
+互联网体系结构/庖丁解牛Linux网络协议栈
+做中学计算机网络
+git clone https://github.com/mengning/net.git
+
+Linux从零入门实战 —— 边学边练：最有效的Linux实践之路
+git clone https://github.com/mengning/linuxstart.git
+
+庖丁解牛Linux操作系统分析
+git clone https://github.com/mengning/linuxkernel.git
+
+chameleon
+实现一种WiFi路由器伪装技术，代号变色龙chameleon，以便使变色龙附近的手机（STA,station)能自动关联认证，以使WiFi技术拥有更好的使用体验和更大的覆盖范围。
+git clone https://github.com/mengning/chameleon.git
+
+
+
+我用的M1 MacBook Air，觉得跑一个虚拟机还是太重了。
+目前的工作流是用 Docker 编译 Kernel，然后在 macOS 上的 QEMU 里跑。
+
+这样做的好处：
+（仅针对 Apple Silicon）macOS 的 QEMU 可以用 hvf 加速。有 Mac 硬件虚拟化特性的支持，性能比在虚拟机里好。
+每次编译都从镜像创建一个新的容器，编译完就自动销毁。减少虚拟机使用带来的膨胀。各种在 macOS 里的习惯性配置（例如vimrc、zshrc、各种命令的 alias）也可以延续使用，不用在虚拟机里再配置一遍。
+团队共用编译路径，避免因为工具链版本影响输出。而且可以在此基础上搭建 CI。Kernel 开发经常是 TDD，有这一套工具省事太多。
+
+
+
+git clone https://github.com/yuan-xy/Linux-0.11.git
 
 git clone git@github.com:wgf8088/Linux-0.11.git
 
@@ -90,6 +145,7 @@ files/          //  忽略files文件夹
 ```
 
 ## 调试 Linux 最早期的代码
+
 
 ![整个系列的结构](./assets/整个系列的结构.png)
 
@@ -384,24 +440,79 @@ bochs -f bochs.properties
 # 正式启动
 
 
+步骤二：下载Linux内核（Linux-5.0.1）
+
+
+```c{.line-numbers}
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.0.1.tar.xz    #下载linux-5.0.1的内核
+
+```
+
+```c{.line-numbers}
+// 原始程序
+get https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.0.1.tar.xz #下载linux-5.0.1的内核，当然也可以下载其他版本的，就是有点慢。
+
+xz -d linux-5.0.1.tar.xz #解压
+
+tar -xvf linux-5.0.1.tar 
+cd linux-5.0.1
+
+sudo apt install build-essential flex bison libssl-dev libelf-dev libncurses-dev #安装内核编译所需的库
+
+make i386_defconfig #生成32位x86的配置文件
+```
+步骤3：制作带有debug调试的内核
+
+```c{.line-numbers}
+make menuconfig #执行make menuconfig之后，会跳出一个图形化界面，就在图形化界面中完成以下操作，如果没有跳出，或者报错，自行解决界面大小适应问题：安装vmware tool,或者在设置中调整分辨率。
+
+1：选择 Kernel hacking
+
+2：选择 Compile-time checks and compiler options
+
+3：选择 [ ]Compile the kernel with debug info
+
+4：按Y 前面就多了一个 [*] Compile the kernel with debug info
+
+ 5：选择 save
+
+ 6：按 esc，直到退出图形化界面
+
+
+```
+make ARCH=x86 x86_64_defconfig
+
+
+```c{.line-numbers}
+ARCH		?= arm
+CROSS_COMPILE		?= arm-linux-gnueabi-
+
+
+编译配置: ./configure --target-list=arm-softmmu --audio-drv-list=
+编译安装: make ; make install
+编译: make ARCH=arm CROSS_COMPILE=arm-linux-gnueabi- -j4
+
+
+```
+
+
+```c{.line-numbers}
 
 
 
+```
+
+```c{.line-numbers}
 
 
 
+```
+
+```c{.line-numbers}
 
 
 
-
-
-
-
-
-
-
-
-
+```
 
 
 
