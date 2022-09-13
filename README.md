@@ -26,6 +26,7 @@
 
 # Linux-0.11
 
+git clone git@github.com:wgf8088/Linux-0.11.git
 
 git@github.com:wgf8088/Linux-0.11.git
 
